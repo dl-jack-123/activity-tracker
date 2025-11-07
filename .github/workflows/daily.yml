@@ -5,6 +5,9 @@ on:
     - cron: '0 3,9,15,21 * * *'  # 每6小時 commit 一次
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
